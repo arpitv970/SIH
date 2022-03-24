@@ -1,8 +1,104 @@
-.card {
-    padding: 3vh;
-}
-
 tr, th {
     width: auto;
     text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: auto; 
+    height: auto;
+    font-family: sans-serif;
+    left: 30px;
+}
+
+.row{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card{
+    width: 250px;
+    margin: auto;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 5%;
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.card-front{
+
+    background-position: center;
+    background-size: cover;
+}
+.front-1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(/resources/Amer.jpg);
+}
+.front-2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(/resources/Hawamahal.jpg);
+}
+
+.front-3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(/resources/Naharagarh.jpg);
+}
+.front-4{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(/resources/jantar.jpg);
+}
+.front-5{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(/resources/jalmahal.jpg);
+}
+.front-6{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(/resources/patrikagate.jpg);
+}
+
+.card-back{
+    background: #1c1f54;
+    transform: rotateX(180deg);
+}
+.card:hover .inner-box{
+    transform: rotateX(-180deg);
+}
+.card:hover span{
+    transform: translateY(140px);
+}
+p{
+    display: inline-block;
+    color: #fff;
+    padding: 15px;
+    /* border-bottom: 1px solid #fff;0 */
+    /* margin-top: 5px; */
+    margin: auto;
+}
+
+.btn {
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
