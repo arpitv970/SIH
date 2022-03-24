@@ -1,0 +1,8 @@
+.card {
+    padding: 3vh;
+}
+
+tr, th {
+    width: auto;
+    text-align: center;
+}
