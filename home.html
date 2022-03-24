@@ -34,9 +34,44 @@
                     </ul>
                   </li>          
                 </ul>
+                <div class="mx-1">
+                  <button class="btn btn-outline-danger rounded-pill text-center align-items-center" data-bs-toggle="modal"
+                      data-bs-target="#signupModal">Feed Back</button>
+              </div>
               </div>
             </div>
           </nav>
+
+        <!-- SignUp Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Give your Feed Back</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputName1" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="exampleInputName1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    placeholder="name@example.com" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputName1" class="form-label">Description</label>
+                              <textarea class="form-control" id="exampleInputName1"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-success rounded-pill">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
           <!-- Carousel -->
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -54,14 +89,14 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="resources/carousel2.jpg" class="d-block w-100" alt="...">
+                <img src="resources/carousel4.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
                   <p>Some representative placeholder content for the second slide.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="resources/carousel3.jpg" class="d-block w-100" alt="...">
+                <img src="resources/carousel5.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>Some representative placeholder content for the third slide.</p>
@@ -76,7 +111,6 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-            <h3>Who is Akatsuki</h3>
           </div>
 </body>
 </html>
